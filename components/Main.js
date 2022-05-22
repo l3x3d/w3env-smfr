@@ -37,7 +37,7 @@ export default function Main() {
             className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
             href="/"
           >
-            <div className="flex text-lg">
+            <div className="flex text-lg animate-pulse">
               <span className="justify-center">MINTING SOON</span>
             </div>
           </a>
