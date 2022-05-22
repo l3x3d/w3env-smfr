@@ -362,27 +362,5 @@ export default function Footer() {
                 );
               }
 
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-              >
-
-              </a>
-            </li>
-          </ul>
-          <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-            <a
-              href="/"
-              className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
-            >
-              © 2022 SMOWLMFERS.
-            </a>
-          </ul>
-        </div>
-      </div>
-    </footer>
   );
 }
