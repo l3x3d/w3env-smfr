@@ -7,61 +7,29 @@ export default function Main() {
           smowlmfers
         </h1>
         <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-right"
-                 speed="15"
+                 speed="16"
                  gradientColor="[0,0,0]"
-                 gradient="false">
-        minting monday the 23rd @ 3pm pst
-          </Marquee>
-
-          <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
-                   speed="24"
-                   gradientColor="[0,0,0]"
-                   gradient="false"
-                   direction="right">
+                 gradient="false"
+                 gradient="false"
+                 direction="right">
 
 
-        supply: 1337   price: 0.01337
+
+        supply: 1337   price: 0.01337 ________ whitelist: 1 free mint per wallet ________ minting monday the 23rd @ 3pm pst
+
             </Marquee>
 
-        <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
-                 speed="25"
-                 gradientColor="[0,0,0]"
-                 gradient="false">
-
-
-       whitelist: 1 free mint per wallet
-          </Marquee>
 
 
         <Marquee class="text-3xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
-                 speed="17"
+                 speed="24"
                  gradientColor="[0,0,0]"
                  gradient="false"
                  direction="right">
 
 
-      420 free mints for whitelist
-          </Marquee>
-
-          <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
-                   speed="28"
-                   gradientColor="[0,0,0]"
-                   gradient="false"
-                   direction="left">
-
-
-          wl free mint @ 3 - 3:15pm pst
-            </Marquee>
-
-        <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
-                 speed="30"
-                 gradientColor="[0,0,0]"
-                 gradient="false"
-                 direction="right">
-
-        public mint @ 3:15pm pst
-          </Marquee>
-
+      420 free mints for whitelist ________  wl free mint @ 3 - 3:15pm pst  ________  public mint @ 3:15pm pst
+      </Marquee>
           <br />
 
         <div className="ml-6 text-center">
