@@ -17,7 +17,7 @@ export default function Home() {
       />
       <Head>
         <title>smowlmfers</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="./images/favicon.png" />
       </Head>
       <Header />
       <Main />
