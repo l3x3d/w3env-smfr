@@ -48,7 +48,7 @@ export default function Main() {
         get yourself some smowlmfers
       </h2>
       <h3 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-5xl md:text-4xl">
-       theoretical mints 
+       theoretical mints
       </h3>
       <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
 
