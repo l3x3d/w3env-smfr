@@ -1,194 +1,419 @@
-export default function Footer() {
+export default function Main() {
   return (
-    <footer className="pb-4 text-gray-200">
-      <div className="max-w-5xl xl:max-w-5xl mx-auto divide-y divide-gray-900 px-4 sm:px-6 md:px-8">
-        <ul className="text-sm font-medium sm:pb-20 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10">
-          <li className="space-y-5 row-span-2">
-            <h2 className="text-2xl tracking-wide text-white"></h2>
-            <ul className="space-y-4 text-md">
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
+    <section class="text-gray-600 body-font">
+      <div class="max-w-5xl pt-52 pb-24 mx-auto">
+        <h1 class="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
+          smowlmfers
+        </h1>
+        <h2 class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
+        minting monday the 23rd @ 3pm pst
+          <br />
+        supply: 1337   price: 0.01337
+        <br />
+        whitelist: 1 free mint per wallet
+        <br />
+        420 free mints for whitelist
+        <br />
+        wl free mint @ 3 - 3:15pm pst
+        <br />
+        public mint @ 3:15pm pst
+        </h2>
+        <div className="ml-6 text-center">
+          <a
+            className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
+            href="/"
+          >
+            <div className="flex text-lg">
+              <span className="justify-center">MINTING SOON</span>
+            </div>
+          </a>
+          <a
+            className=" twitter-follow button inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-green-200 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline"
+            href="https://twitter.com/smowlmfers?ref_src=twsrc%5Etfw"
+          >
+            <div className="flex text-lg">
 
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>{" "}
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>{" "}
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="space-y-5 row-span-2">
-            <h2 className="text-2xl tracking-wide text-white"></h2>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="space-y-5 row-span-2">
-            <h2 className="text-2xl tracking-wide text-white"></h2>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/"
-                >
-
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="space-y-5">
-            <h2 className="text-2xl tracking-wide text-white"></h2>
-            <ul className="space-y-4">
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/https://twitter.com/smowlmfers"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/https://twitter.com/smowlmfers"
-                >
-
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-white transition-colors duration-200 font-semibold text-xl"
-                  href="https://discord.gg/bnfm62QK"
-                >
-                  Discord
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div className="flex flex-col-reverse justify-between pt-5 pb-4 border-t lg:flex-row bg-top border-black">
-          <ul className="flex flex-col space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-            <li>
-              <a
-                href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-              >
-
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-              >
-
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-              >
-
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-              >
-
-              </a>
-            </li>
-            <li>
-              <a
-                href="/"
-                className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold"
-              >
-
-              </a>
-            </li>
-          </ul>
-          <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-            <a
-              href="/"
-              className="text-md text-gray-200 hover:text-white transition-colors duration-300 hover:text-deep-purple-accent-400 font-semibold tracking-tight"
-            >
-              © 2022 SMOWLMFERS.
-            </a>
-          </ul>
+              <span className="justify-center">FOLLOW US</span>
+            </div>
+          </a>
         </div>
       </div>
-    </footer>
+      <div className="container flex flex-col items-center justify-center mx-auto">
+        <img
+          className="object-cover object-center w-3/4 mb-10 border shadow-md g327"
+          alt="Placeholder Image"
+          src="./images/smfr-assets/smowlmfer 3.png"></img>
+      </div>
+      <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
+        get yourself some smowlmfers
+      </h2>
+      <h3 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-5xl md:text-4xl">
+       theoretical mints 
+      </h3>
+      <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
+
+      </p>
+      <div className="container flex flex-col items-center justify-center mx-auto pt-12 pb-24 max-w-6xl mx-auto fsac4 md:px-1 px-3">
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 1.png"></img>
+          <h3 class="pt-3 font-semibold .text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 2.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 3.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 4.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 5.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 6.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 7.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 8.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 9.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 10.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 11.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 12.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 13.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 14.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 15.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 16.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 17.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 18.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 19.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 20.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 21.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 22.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 23.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 24.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 25.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 26.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 27.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 28.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 29.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+
+        <div class="ktq4">
+          <img className="object-cover object-center mb-10 border shadow-md g327"
+               alt=""
+               src="./images/smfr-assets/smowlmfer 30.png"></img>
+          <h3 class="pt-3 font-semibold text-lg text-white">
+
+          </h3>
+          <p class="pt-2 value-text text-md text-gray-200 fkrr1">
+
+          </p>
+        </div>
+      </div>
+
+    </section>
   );
 }
