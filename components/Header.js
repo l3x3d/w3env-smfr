@@ -13,7 +13,7 @@ export default function Header() {
           >smowlmfers
           </a>
 
-          <a className="flex flex-row items-right justify-between p-3 md:p-1"
+          <a className="flex flex-row items-left justify-between p-3 md:p-1"
             href="https://twitter.com/smowlmfers"
             rel="noopener noreferrer"
             target="_blank"

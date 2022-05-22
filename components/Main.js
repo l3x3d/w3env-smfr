@@ -1,3 +1,4 @@
+import Marquee from 'react-fast-marquee'
 export default function Main() {
   return (
     <section class="text-gray-600 body-font">
@@ -5,19 +6,64 @@ export default function Main() {
         <h1 class="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
           smowlmfers
         </h1>
-        <h2 class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center">
+        <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-right"
+                 speed="15"
+                 gradientColor="[0,0,0]"
+                 gradient="false">
         minting monday the 23rd @ 3pm pst
-          <br />
+          </Marquee>
+
+          <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
+                   speed="24"
+                   gradientColor="[0,0,0]"
+                   gradient="false"
+                   direction="right">
+
+
         supply: 1337   price: 0.01337
-        <br />
-        whitelist: 1 free mint per wallet
-        <br />
-        420 free mints for whitelist
-        <br />
-        wl free mint @ 3 - 3:15pm pst
-        <br />
+            </Marquee>
+
+        <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
+                 speed="25"
+                 gradientColor="[0,0,0]"
+                 gradient="false">
+
+
+       whitelist: 1 free mint per wallet
+          </Marquee>
+
+
+        <Marquee class="text-3xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
+                 speed="17"
+                 gradientColor="[0,0,0]"
+                 gradient="false"
+                 direction="right">
+
+
+      420 free mints for whitelist
+          </Marquee>
+
+          <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
+                   speed="28"
+                   gradientColor="[0,0,0]"
+                   gradient="false"
+                   direction="left">
+
+
+          wl free mint @ 3 - 3:15pm pst
+            </Marquee>
+
+        <Marquee class="text-2xl font-4 font-semibold lh-6 ld-04 pb-11 text-gray-700 text-center"
+                 speed="30"
+                 gradientColor="[0,0,0]"
+                 gradient="false"
+                 direction="right">
+
         public mint @ 3:15pm pst
-        </h2>
+          </Marquee>
+
+          <br />
+
         <div className="ml-6 text-center">
           <a
             className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
@@ -412,6 +458,7 @@ export default function Main() {
 
           </p>
         </div>
+
       </div>
 
     </section>

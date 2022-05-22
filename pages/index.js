@@ -1,8 +1,11 @@
+import React from "react";
+import ReactDOM from 'react-dom';
 import Head from "next/head";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
+import Marquee from 'react-fast-marquee';
 
 export default function Home() {
   return (

@@ -114,15 +114,15 @@ export default function Footer() {
                   className="hover:text-white transition-colors duration-200 text-xl"
                   href="/https://twitter.com/smowlmfers"
                 >
-                  Twitter
+
                 </a>
               </li>
               <li>
                 <a
-                  className="hover:text-white transition-colors duration-200 text-xl"
-                  href="/https://twitter.com/smowlmfers"
+                  className="hover:text-white transition-colors duration-200 font-semibold text-xl"
+                  href="https://twitter.com/smowlmfers"
                 >
-
+                Twitter
                 </a>
               </li>
               <li>
@@ -190,5 +190,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+
   );
 }
