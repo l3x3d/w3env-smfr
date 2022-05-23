@@ -2,44 +2,14 @@ import React from 'react'
 import Marquee from 'react-fast-marquee';
 import { useWeb3React } from "@web3-react/core";
 import { useEffect } from "react";
-import { injected } from "../components/wallet/connectors"
-import { InjectedConnector } from '@web3-react/injected-connector'
+import { injected } from "../components/wallet/connectors";
+import { InjectedConnector } from '@web3-react/injected-connector';
+
+
 
 
 export default function Main() {
-  const {active, account, library, connector, activate, deactivate } = useWeb3React()
 
-  async function connect() {
-    try{
-      await activate(injected)
-      localStorage.setItem('isWalletConnected', true)
-    } catch (ex) {
-      console.log(ex)
-    }
-  }
-
-  async function disconnect() {
-    try{
-      deactivate()
-      localStorage.setItem('isWalletConnected', 'false')
-    } catch (ex) {
-      console.log(ex)
-    }
-  }
-
-  useEffect(() => {
-    const connectWalletOnPageLoad = async () => {
-      if (localStorage?.getItem('isWalletConnected') === 'true') {
-        try {
-          await activate(injected)
-          localStorage.setItem('isWalletConnected', true)
-        } catch(ex) {
-          console.log(ex)
-      }
-    }
-  }
-  connectWalletOnPageLoad()
-}, [])
   return (
 
     <section class="text-gray-600 body-font">
@@ -74,26 +44,24 @@ export default function Main() {
           <br />
           <br />
 
-
-        <div className="ml-6 text-center">
+      <div className="ml-6 text-center">
           <a
-            className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
-            href="/"
-          >
-            <div className="flex text-lg">
-
-              <button onClick={connect} className="justify-center">Connect To MetaMask</button>
-              <br />
-              {active ? <span>_(Connected with <b>{account}</b>)</span> : <span>_(Not connected)</span>}
-            </div>
-          </a>
-          <a
-            className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-green-200 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline"
+            className="inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-red-400 to-red-800 px-14 text-md md:mt-0 focus:shadow-outline"
 
           >
             <div className="flex text-lg animate-pulse">
 
-              <button className="justify-center">Minting Soon</button>
+              <button className="justify-center">MINT ON ETHERSCAN</button>
+            </div>
+          </a>
+          <a
+            className="inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-red-400 to-red-800 px-14 text-md md:mt-0 focus:shadow-outline"
+            href="https://twitter.com/smowlmfers"
+          >
+            <div className="flex text-lg animate-pulse">
+
+              <button className="justify-center">CONTRACT POSTED ON OFFICIAL TWITTER</button>
+
             </div>
           </a>
         </div>
@@ -112,8 +80,9 @@ export default function Main() {
        theoretical mints
       </h3>
       <p className="mx-auto text-xl text-center text-gray-300 font-normal leading-relaxed fs521 lg:w-2/3">
-
       </p>
+
+
       <div className="container flex flex-col items-center justify-center mx-auto pt-12 pb-24 max-w-6xl mx-auto fsac4 md:px-1 px-3">
         <div class="ktq4">
           <img className="object-cover object-center mb-10 border shadow-md g327"
