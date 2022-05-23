@@ -56,7 +56,7 @@ export default function Main() {
 
 
 
-         supply: 1337   price: 0.01337 ________ whitelist: 1 free mint per wallet ________ minting monday the 23rd @ 3pm pst
+         supply: 1337   price: 0.01337 ________ whitelist: 1 free mint per wallet ________ minting monday the 23rd @ 3pm pst  ________
 
             </Marquee>
 
@@ -69,7 +69,7 @@ export default function Main() {
                  direction="right">
 
 
-      420 free mints for whitelist ________  wl free mint @ 3 - 3:15pm pst  ________  public mint @ 3:15pm pst
+      420 free mints for whitelist ________  wl free mint @ 3 - 3:15pm pst  ________  public mint @ 3:15pm pst  ________
       </Marquee>
           <br />
           <br />
@@ -83,6 +83,8 @@ export default function Main() {
             <div className="flex text-lg">
 
               <button onClick={connect} className="justify-center">Connect To MetaMask</button>
+              <br />
+              {active ? <span>_Connected with <b>{account}</b></span> : <span>_Not connected</span>}
             </div>
           </a>
           <a
@@ -91,7 +93,7 @@ export default function Main() {
           >
             <div className="flex text-lg animate-pulse">
 
-              <button className="justify-center">Mint Coming Soon</button>
+              <button className="justify-center">Minting Soon</button>
             </div>
           </a>
         </div>
@@ -100,7 +102,7 @@ export default function Main() {
       <div className="container flex flex-col items-center justify-center mx-auto">
         <img
           className="object-cover object-center w-3/4 mb-10 border shadow-md g327"
-          alt="Placeholder Image"
+          alt=""
           src="./images/smfr-assets/smowlmfer 3.png"></img>
       </div>
       <h2 className="pt-40 mb-1 text-2xl font-semibold tracking-tighter text-center text-gray-200 lg:text-7xl md:text-6xl">
