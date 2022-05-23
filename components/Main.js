@@ -84,7 +84,7 @@ export default function Main() {
 
               <button onClick={connect} className="justify-center">Connect To MetaMask</button>
               <br />
-              {active ? <span>_Connected with <b>{account}</b></span> : <span>_Not connected</span>}
+              {active ? <span>_(Connected with <b>{account}</b>)</span> : <span>_(Not connected)</span>}
             </div>
           </a>
           <a
