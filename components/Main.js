@@ -1,6 +1,47 @@
-import Marquee from 'react-fast-marquee'
+import React from 'react'
+import Marquee from 'react-fast-marquee';
+import { useWeb3React } from "@web3-react/core";
+import { useEffect } from "react";
+import { injected } from "../components/wallet/connectors"
+import { InjectedConnector } from '@web3-react/injected-connector'
+
+
 export default function Main() {
+  const {active, account, library, connector, activate, deactivate } = useWeb3React()
+
+  async function connect() {
+    try{
+      await activate(injected)
+      localStorage.setItem('isWalletConnected', true)
+    } catch (ex) {
+      console.log(ex)
+    }
+  }
+
+  async function disconnect() {
+    try{
+      deactivate()
+      localStorage.setItem('isWalletConnected', 'false')
+    } catch (ex) {
+      console.log(ex)
+    }
+  }
+
+  useEffect(() => {
+    const connectWalletOnPageLoad = async () => {
+      if (localStorage?.getItem('isWalletConnected') === 'true') {
+        try {
+          await activate(injected)
+          localStorage.setItem('isWalletConnected', true)
+        } catch(ex) {
+          console.log(ex)
+      }
+    }
+  }
+  connectWalletOnPageLoad()
+}, [])
   return (
+
     <section class="text-gray-600 body-font">
       <div class="max-w-5xl pt-52 pb-24 mx-auto">
         <h1 class="text-80 text-center font-4 lh-6 ld-04 font-bold text-white mb-6">
@@ -15,7 +56,7 @@ export default function Main() {
 
 
 
-        supply: 1337   price: 0.01337 ________ whitelist: 1 free mint per wallet ________ minting monday the 23rd @ 3pm pst
+         supply: 1337   price: 0.01337 ________ whitelist: 1 free mint per wallet ________ minting monday the 23rd @ 3pm pst
 
             </Marquee>
 
@@ -32,27 +73,30 @@ export default function Main() {
       </Marquee>
           <br />
           <br />
+
+
         <div className="ml-6 text-center">
           <a
             className="inline-flex items-center py-3 font-semibold text-black transition duration-500 ease-in-out transform bg-transparent bg-white px-7 text-md md:mt-0 hover:text-black hover:bg-white focus:shadow-outline"
             href="/"
           >
-            <div className="flex text-lg animate-pulse">
+            <div className="flex text-lg">
 
-              <span className="justify-center">MINTING SOON</span>
+              <button onClick={connect} className="justify-center">Connect To MetaMask</button>
             </div>
           </a>
           <a
-            className=" twitter-follow button inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-green-200 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline"
-            href="https://twitter.com/smowlmfers?ref_src=twsrc%5Etfw"
-          >
-            <div className="flex text-lg">
+            className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-green-200 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline"
 
-              <span className="justify-center">FOLLOW US</span>
+          >
+            <div className="flex text-lg animate-pulse">
+
+              <button className="justify-center">Mint Coming Soon</button>
             </div>
           </a>
         </div>
       </div>
+
       <div className="container flex flex-col items-center justify-center mx-auto">
         <img
           className="object-cover object-center w-3/4 mb-10 border shadow-md g327"

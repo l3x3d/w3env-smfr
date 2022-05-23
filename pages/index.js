@@ -6,8 +6,12 @@ import Main from "../components/Main";
 import Footer from "../components/Footer";
 import { NextSeo } from "next-seo";
 import Marquee from 'react-fast-marquee';
+import { useWeb3React } from "@web3-react/core";
+import { useEffect } from "react";
+import { injected } from "../components/wallet/connectors"
 
 export default function Home() {
+  
   return (
     <div className="text-black bg-black">
       <NextSeo
@@ -21,9 +25,15 @@ export default function Home() {
       <Head>
         <title>smowlmfers</title>
         <link rel="icon" href="./images/favicon.png" />
+
+
+
       </Head>
+
       <Header />
+
       <Main />
+
       <Footer />
     </div>
   );
