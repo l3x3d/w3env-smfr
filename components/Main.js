@@ -60,7 +60,7 @@ export default function Main() {
           >
             <div className="flex text-lg animate-pulse">
 
-              <button className="justify-center">CONTRACT POSTED ON OFFICIAL TWITTER</button>
+              <button className="justify-center">CONTRACT ON OFFICIAL TWITTER</button>
 
             </div>
           </a>
