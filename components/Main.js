@@ -47,7 +47,7 @@ export default function Main() {
       <div className="ml-6 text-center">
           <a
             className="inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-red-400 to-red-800 px-14 text-md md:mt-0 focus:shadow-outline"
-
+            href="https://etherscan.io/address/0x4ac7247aa85d2f7ca39166feecdddea5badc0172#writeContract"
           >
             <div className="flex text-lg animate-pulse">
 
