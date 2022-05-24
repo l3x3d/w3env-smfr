@@ -25,8 +25,8 @@ export default function Main() {
                  direction="right">
 
 
+                 supply: 1337  ________  public mint from contract using function 6. mint : price: 0.01337 each _____ max 4 paid mints
 
-         supply: 1337   price: 0.01337 ________ whitelist: 1 free mint per wallet ________ minting monday the 23rd @ 3pm pst  ________
 
             </Marquee>
 
@@ -38,8 +38,8 @@ export default function Main() {
                  gradient="false"
                  direction="right">
 
+              wl mint from contract using function 5. freeMint  ________ first 420 mints free  ________ 1 free mint per wl wallet
 
-      420 free mints for whitelist ________  wl free mint @ 3 - 3:15pm pst  ________  public mint @ 3:15pm pst  ________
       </Marquee>
           <br />
           <br />
@@ -55,7 +55,7 @@ export default function Main() {
             </div>
           </a>
           <a
-            className="inline-flex items-center py-3 font-semibold tracking-tighter text-black transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-red-400 to-red-800 px-14 text-md md:mt-0 focus:shadow-outline"
+            className="inline-flex items-center py-3 font-semibold tracking-tighter text-white transition duration-500 ease-in-out transform bg-transparent ml-11 bg-gradient-to-r from-green-400 to-blue-800 px-14 text-md md:mt-0 focus:shadow-outline"
             href="https://twitter.com/smowlmfers"
           >
             <div className="flex text-lg animate-pulse">
